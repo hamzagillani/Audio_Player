@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+  <Button
+      android:text="PLAY"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="play"></Button>
+<Button
+    android:text="PAUSE"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="pause"
+    android:layout_marginTop="10dp"></Button>
+
+    <SeekBar
+
+        android:id="@+id/seekbar2_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        ></SeekBar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textSongTime_id"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:text="0 min, 0 sec"></TextView>
+
+        <TextView
+            android:id="@+id/textStartTime_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="274dp"
+            android:text="0 min, 0 sec"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/back_id"
+            android:text="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+
+           ></Button>
+
+        <Button
+            android:id="@+id/frwd_id"
+            android:text="Fwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/back_id"
+            ></Button>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <SeekBar
+        android:id="@+id/seekbae_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+    </SeekBar>
+    <TextView
+        android:id="@+id/vouloe_value_id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:textStyle="bold">
+
+    </TextView>
+
+</LinearLayout>
